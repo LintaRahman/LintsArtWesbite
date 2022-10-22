@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="shortcut icon" href="images/logo-modified.png" type="image/x-icon">
+        <meta name="viewport" content="with=device-width, intial-scale=1.0">
+        <title>Lints_art</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="store.js" async></script>
+    </head>
+    <body>
+        <header>
+            <!-- <section class="header"> -->
+            <nav><a href="index.html"><img src="images/logo-modified.png" ></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times-circle" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="products.html">SHOP</a></li>
+                    <li><a href="about-us.html">ABOUT US</a></li>
+                    <li><a href="contact-us.html">CONTACT US</a></li>
+                    <li><a href="cart.html">CART <ion-icon name="cart-outline"></ion-icon></a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+            
+            <!-- <div class="text-box">
+                <h1>SHOP</h1>
+                <p>Art Business</p>
+                <a href="" class="hero-btn">Visit us to know more</a>
+            </div> -->
+            <!-- </section> -->
+        </header>
+
+        <div class="container">
+            <h1>Contact Us</h1>
+            <p>Get in touch.</p>
+            <div class="contact-box">
+                <div class="contact-left">
+                    <h3>Send your queries</h3>
+                    
+                    <form action="submission.html" method="GET">
+                        <div class="input-row">
+                            <div class="input-group">
+                                <label>Name</label>
+                                <input name="Name:" type="text" placeholder="Your name">
+                            </div>
+                            <div class="input-group">
+                                <label>Phone</label>
+                                <input name="Phone:" type="number" placeholder="+44 xxxxx xxxxxx">
+                            </div>
+                        </div>
+                        <div class="input-row">
+                            <div class="input-group">
+                                <label>E-mail</label>
+                                <input name="E-mail:" type="email" placeholder="your-email@email.com" required>
+                            </div>
+                            <div class="input-group">
+                                <label>Subject</label>
+                                <input name="Subject:" type="text" placeholder="+44 xxxxx xxxxxx">
+                            </div>
+                        </div>
+
+                        <label>Message</label>
+                        <textarea rows="5" placeholder="Your message"></textarea>
+                        <button type="submit">SEND</button>
+                    </form>
+                </div>
+                <div class="contact-right">
+                    <h3>Reach Us</h3>
+                    <table>
+                        <tr>
+                            <td><ion-icon name="mail-outline"></ion-icon> E-mail</td>
+                            <td>lintsart@gmail.com</td>
+                        </tr>
+                        <tr>
+                            <td><ion-icon name="call-outline"></ion-icon> Phone</td>
+                            <td>+44 07389 818251</td>
+                        </tr>
+                        <tr>
+                            <td><ion-icon name="logo-instagram"></ion-icon> Instagram</td>
+                            <td>lints_art</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <div class="waves">
+                <div class="wave" id="wave1"></div>
+                <div class="wave" id="wave2"></div>
+                <div class="wave" id="wave3"></div>
+                <div class="wave" id="wave4"></div>
+            </div>
+            <ul class="social_icon">
+                <li><a href="#"><ion-icon name="mail-outline"></ion-icon></a></li>
+                <li><a href="#"><ion-icon name="logo-twitter"></ion-icon></a></li>
+                <li><a href="#"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+                <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
+            </ul>
+            <ul class="menu">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="products.html">SHOP</a></li>
+                <li><a href="about-us.html">ABOUT US</a></li>
+                <li><a href="contact-us.html">CONTACT US</a></li>
+            </ul>
+            <p>	&copy; 2022 | All rights reserved</p>
+        </footer>
+        <script>
+            var navLinks= document.getElementById("navLinks");
+            function showMenu(){
+                navLinks.style.right="0";
+            }
+            function hideMenu(){
+                navLinks.style.right="-200px";
+            }
+        </script>
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+            </body>
+</html>
